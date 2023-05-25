@@ -21,8 +21,10 @@ function createBoxes(amount) {
     box.style.width = `${i * 10 + 30}px`;
     box.style.height = `${i * 10 + 30}px`;
     box.classList.add('box');
+    let boxArray = [];
+    boxArray.push(box);
 
-    boxesArray.appendChild(box);
+    boxesArray.appendChild(...boxArray);
   }; 
 };
 
