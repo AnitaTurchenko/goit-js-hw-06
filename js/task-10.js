@@ -15,17 +15,21 @@ createBtn.addEventListener("click", () => {
 destroyBtn.addEventListener("click", destroyBoxes);
 
 function createBoxes(amount) {
+  let boxArray = [];
+
   for (let i = 0; i < amount; i++) {
+
     const box = document.createElement("div");
     box.style.backgroundColor = getRandomHexColor();
     box.style.width = `${i * 10 + 30}px`;
     box.style.height = `${i * 10 + 30}px`;
     box.classList.add('box');
-    let boxArray = [];
+    
     boxArray.push(box);
 
-    boxesArray.appendChild(...boxArray);
   }; 
+  boxesArray.appendChild(...boxArray);
+
 };
 
 function destroyBoxes() {
