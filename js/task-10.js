@@ -28,9 +28,10 @@ function createBoxes(amount) {
     boxArray.push(box);
 
   }; 
-  boxesArray.appendChild(...boxArray);
+  boxesArray.append(...boxArray);
 
 };
+
 
 function destroyBoxes() {
   boxesArray.innerHTML = "";
